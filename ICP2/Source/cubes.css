@@ -1,0 +1,18 @@
+
+.fcolumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.frow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fbox {
+    margin-left: 36%;
+    margin-top: 20%;
+}
