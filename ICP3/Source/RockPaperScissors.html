@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        *{margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+            box-sizing:border-box}::selection{background:#fb9fe5;text-shadow:none}a{color:#0088CC;text-decoration:none;outline:0}a:hover{color:#005580}a img{border:none}img{max-width:100%}html{font-size:100%}body{padding:5%;font:300 1.25em/1.6 monospace;background:#fff;color:#000;}h1{font-family:"Helvetica Neue",sans-serif;line-height:1;font-weight:300;margin-bottom:1em;}.rps{padding:2em;background:#eee;}
+    </style>
+</head>
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<div class="rps">
+    <script>
+
+        var choiceOfUser = prompt("Choose one among the rock, paper and scissors?"); // Declaring Choice of User Variable
+
+
+        var choiceOfComputer = Math.random(); // Declaring Choice of Computer Variable
+        if (choiceOfComputer <=34)
+        {
+            choiceOfComputer = "rock";
+        }
+        else if(choiceOfComputer <=67)
+        {
+            choiceOfComputer = "paper";
+        }
+        else
+        {
+            choiceOfComputer = "scissors";
+        }
+
+
+        document.write("<p>Computer's Choice:" + " " + choiceOfComputer + "</p>");  // Displays Choice of Computer Randomly using Math.random() function
+        document.write("<p>User's Choice:" + " " + choiceOfUser + "</p>"); // Displays User Choice
+
+
+
+        var compare = function(choice1,choice2) // Defining the Compare function between choice of user and choice of computer
+        {
+            if (choice1 === choice2)
+            {
+                return "It's a tie!";
+            }
+            if (choice1 === "rock")
+            {
+                if (choice2 === "scissors")
+                {
+                    // rock wins
+                    return "You win!";
+                }
+                else
+                {
+                    // paper wins
+                    return "You lose!";
+                }
+            }
+            if (choice1 === "paper")
+            {
+                if (choice2 === "rock")
+                {
+                    // paper wins
+                    return "You win!";
+                }
+                else
+                {
+                    // scissors wins
+                    return "You lose!";
+                }
+            }
+            if (choice1 === "scissors")
+            {
+                if (choice2 === "rock")
+                {
+                    // rock wins
+                    return "You lose!";
+                }
+                else
+                {
+                    // scissors wins
+                    return "You win!";
+                }
+            }
+        };
+
+
+        var results = compare(choiceOfUser,choiceOfComputer);   // Calling the compare function with parameters of computer and user choice
+
+
+        document.write("<br><hr><br>" + results);  // Display results
+    </script>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
