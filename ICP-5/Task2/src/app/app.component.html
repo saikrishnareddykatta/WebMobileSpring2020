@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  // 1. write Typescript code in "app.component.ts" to work with calculator
+</head>
+<body>
+<div class="maindisplay">
+  <div class="subdisplay">{{ subText }}</div>
+  {{ mainText }}
+</div>
+<table align="center">
+  <tr>
+    <td><button (click)="pressKey('7')" > 7 </button></td>
+    <td><button (click)="pressKey('8')" > 8 </button></td>
+    <td><button (click)="pressKey('9')" > 9 </button></td>
+    <td><button (click)="pressKey('+')" > + </button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="pressKey('6')">6</button></td>
+    <td><button (click)="pressKey('5')" >5</button></td>
+    <td><button (click)="pressKey('4')" >4</button></td>
+    <td><button (click)="pressKey('-')" >-</button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="pressKey('3')" >3</button></td>
+    <td><button (click)="pressKey('2')" >2</button></td>
+    <td><button (click)="pressKey('1')" >1</button></td>
+    <td><button (click)="pressKey('*')" >*</button></td>
+  </tr>
+  <br>
+  <tr>
+    <td><button (click)="pressKey('0')" >0</button></td>
+    <td><button (click)="pressKey('.')" >.</button></td>
+    <td><button (click)="pressKey('/')" >/</button></td>
+    <td><button (click)="getAnswer()" >=</button></td>
+  </tr>
+<br>
+  <tr>
+    <td><button (click)="allClear()" >AC</button></td>
+  </tr>
+</table>
+
+</body>
+</html>

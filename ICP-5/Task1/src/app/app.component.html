@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TodoApp List</title>
+
+</head>
+<body style="background-color: lightcoral;height:1300px">
+<br>
+<br>
+<div class="todos">
+
+  <div class="container">
+    <form #todoForm= "ngForm"(submit)="todoSubmit(todoForm.value); todoForm.resetForm()" >
+      <div class="form-group">
+        <h1 class="text-center ">TO DO APPLICATION</h1>
+        <div class="input-group-prepend">
+          <input type="text" #todo onfocus="this.value=''" class="form-control" placeholder="Add Your To do Task Here" name="todo" ngModel>
+          <span class="input-group-text" (click)="addTodo(todo.value)">
+    <i>+</i></span>
+        </div>
+      </div>
+      <div class="data">
+        <ul class="list-unstyled">
+          <li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" >delete</i></li>
+        </ul>
+      </div>
+    </form>
+
+  </div>
+
+
+</div>
+</body>
+</html>
