@@ -1,0 +1,25 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  color: indianred;
+  text-align: center;
+  position: center;
+
+}
+.colu
+{
+  color: black;
+  text-decoration-style: solid !important;
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
+.gobtn{
+  background-color: royalblue;
+}

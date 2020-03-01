@@ -1,0 +1,69 @@
+<div class="parent-container">
+  <div class="child-container">
+    <h2><b>Search for your Recipe
+    </b></h2><br>
+    <form>
+      <div class="form-group">
+        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
+          <input #recipe class="form-control" placeholder="Search for Recipe" type="text">
+          <span class="input-group-addon">-</span>
+          <input #place class="form-control" placeholder="Location" type="text">
+          <span class="input-group-addon">-</span>
+
+        </div>
+        <br>
+        <button (click)="getVenues()" class="btn btn-dark col-lg-2 col-lg-offset-5 gobtn" type="button">Go</button>
+
+      </div>
+    </form>
+  </div>
+</div><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="panel panel-default col-6">
+        <div class="panel-heading"><b>How to make</b></div>
+        <div class="panel-body">
+          <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+            <div class="pull-left">
+              <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+              <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
+
+            </div>
+
+            <span class="pull-right">
+          <img src="{{recipe.icon}}" style="width: 70px; height: 50px;" align="center"/>
+
+      </span>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="panel panel-default col-6">
+        <div class="panel-heading"><b>Where to get</b></div>
+        <div class="panel-body">
+
+          <div *ngFor="let venue of venueList" class="list-group-item clearfix">
+            <div class="pull-left">
+              <h4 class="list-group-item-heading">{{ venue.name }}</h4>
+            </div>
+
+            <span class="pull-right">
+             <a target="_blank" href="http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}
+             &daddr={{venue.formattedAddress[0]}},{{venue.formattedAddress[1]}},{{venue.formattedAddress[2]}}">
+               <img src="../../assets/google.png" style="width: 30px; height: 30px;"></a>
+      </span>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
