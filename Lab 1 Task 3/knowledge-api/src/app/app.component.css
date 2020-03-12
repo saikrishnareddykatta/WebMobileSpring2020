@@ -1,0 +1,16 @@
+.main{
+
+  text-align:center; /*this command aligns text to the center*/
+  align-items: center; /*this command aligns item o the center*/
+  /*background-color: lightskyblue;*/
+  height: 96vh; /* vertical height*/
+  /*background-image: url("./../assets/design1.jpg");*/
+  /*background-repeat:no-repeat;*/
+  background: url(./../assets/design5.jpg) no-repeat center center fixed; /* taking an background image from an assets module*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-start-end-radius: 0vh;
+}
+

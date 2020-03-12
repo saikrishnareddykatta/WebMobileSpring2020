@@ -1,0 +1,28 @@
+<div class="main">
+  <div><h1><b>Knowledge Search API</b></h1></div>
+  <div>
+    <input type="text" width="20px" #search> <!--here #search is an reference value-->
+    <button type="submit" (click)="getApiValue(search.value)">Search</button> <!--calling the function and sending a parameter value that has entered in input box-->
+  </div>
+  <div *ngIf="apiResponse"> <!-- if we get an apiResponse from app.component.ts then the following code appears in the web page-->
+    <!-- *ngIf directive adds the below portion to the web page when we get an apiResponse -->
+    <h3>Search Result</h3>
+    <table align="center">
+      <tr>
+        <td><h3>Name:</h3></td>
+        <td><h3>{{this.apiResponse?.itemListElement[0].result.name}}</h3></td> <!-- displaying the name of the entity that we have searched-->
+        <!--itemListElement is the property that we get after we get an API response-->
+        <!--itemListElement contains all the details of the entity that we have searched for-->
+      </tr>
+      <tr>
+        <td><h3>Image</h3></td>
+        <td> <img src={{this.apiResponse?.itemListElement[0].result.image.contentUrl}} alt="Image Not Found"></td> <!--displaying the image of the entity that we have searched-->
+      </tr>
+      <tr>
+        <td><h3>Description:</h3></td>
+        <td><h3>{{this.apiResponse?.itemListElement[0].result.description}}</h3></td>  <!--displaying the description of the entity that we have searched-->
+      </tr>
+    </table>
+  </div>
+</div>
+
