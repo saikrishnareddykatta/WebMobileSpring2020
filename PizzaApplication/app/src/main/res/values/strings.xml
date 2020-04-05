@@ -1,0 +1,37 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SKR Pizza</string>
+    <string name="name">Name</string>
+    <string name="toppings">Toppings</string>
+
+    <string name="olives">Olives</string>
+    <string name="jalapenoes">Jalapenoes</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="chicken">Chicken</string>
+    <string name="corn">Corn</string>
+    <string name="onion">Onion</string>
+    <string name="bellpeppers">Bellpeppers</string>
+
+    <string name="quantity">Quantity</string>
+    <string name="initial_quantity_value">2</string>
+    <string name="order">Order</string>
+    <string name="order_summary_name">Name:<xliff:g example="Vijaya" id="name">%s</xliff:g></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="order_summary_Jalapenoes">Add Jalapenoes ? <xliff:g example="yes" id="Jalapenoes">%s</xliff:g></string>
+    <string name="order_summary_Olives">Add Olives? <xliff:g example="yes" id="Olives">%s</xliff:g></string>
+    <string name="order_summary_Chicken">Add Chicken? <xliff:g example="yes" id="Chicken">%s</xliff:g></string>
+    <string name="order_summary_Onions">Add Onions? <xliff:g example="yes" id="Onions">%s</xliff:g></string>
+    <string name="order_summary_Lettuce">Add Lettuce? <xliff:g example="yes" id="Lettuce">%s</xliff:g></string>
+    <string name="order_summary_Corn">Add Corn? <xliff:g example="yes" id="Corn">%s</xliff:g></string>
+    <string name="order_summary_Bellpeppers">Add Bellpeppers? <xliff:g example="yes" id="Bellpeppers">%s</xliff:g></string>
+    <string name="order_summary_quantity">Quantity: <xliff:g example="2" id="quantity">%d</xliff:g></string>
+    <string name="order_summary_total_price">Total Price: $ <xliff:g example="10" id="price">%.2f</xliff:g></string>
+    <string name="thank_you">Thank you!</string>
+    <string name="too_much_pizza">Please select less than 10 pizzas</string>
+    <string name="too_little_pizza">Please select atleast one pizza</string>
+    <string name="title_activity_summary">Summary</string>
+    <string-array name="Feedback">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
