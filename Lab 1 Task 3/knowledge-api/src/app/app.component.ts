@@ -19,7 +19,7 @@ export class AppComponent {
       /* here the service name knowledge, this line of code waits for the response*/
       /*here subscribe is an observable and waits for response and executes the code when it receives an response*/
       console.log('Api response.....', res); /*prints the response in the console*/
-      if (res) { /*if there is any response then excute the below code*/
+      if (res) { /*if there is any response then execute the below code*/
         this.apiResponse = res; /* if we get an response, store it in apiResponse*/
         // .itemListElement[0].result
       }
